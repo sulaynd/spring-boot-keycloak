@@ -7,8 +7,9 @@ spring:
       enabled: true
 
 keycloak:
-  realm: javatechie
-  auth-server-url: http://localhost:8180/auth
-  resource: springboot-keycloak
+  realm: loulysoft
+  #auth-server-url: http://localhost:8180/auth
+  auth-server-url: http://0.0.0.0:8080 #keycloak server
+  resource: springboot-keycloak #clientID
   public-client: true
   bearer-only: true
